@@ -1,4 +1,4 @@
-# map_conservation_score
+# mapping_conservation_scores
 
 ## Scripts to map conservation scores (phylop/phastcons) to the region of your interest
 
