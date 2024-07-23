@@ -1,4 +1,4 @@
-## Scripts to map conservation scores (phylop/phastcons) to the region of your interest
+## Scripts to map conservation scores (phylop/phastcons) to the region of interest
 
 The scores can be mapped using bash (by bedops) or by using Annotation Packages in R .
 
