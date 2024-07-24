@@ -36,7 +36,10 @@ The following steps illustrate the first method of mapping scores from the downl
 		- Phylop - 100 way:    http://hgdownload.cse.ucsc.edu/goldenPath/hg38/phyloP100way/
 - From Bioconductor
 		- https://bioconductor.org/packages/3.19/data/annotation/html/phastCons100way.UCSC.hg38.html
-		
+
+
+To copy the wigFix files
+rsync -avz --progress rsync://hgdownload.cse.ucsc.edu/goldenPath/hg38/phastCons100way/hg38.100way.phastCons/ ./		
 		
 ## Installation of required tools
 

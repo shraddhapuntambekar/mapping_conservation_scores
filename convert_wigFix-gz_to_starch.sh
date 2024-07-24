@@ -16,12 +16,13 @@ maxmem="$3"    # option to limiting the memory usage for sorting
 
 cd $infolder
 
-for i in `ls ${infolder}/*.wigFix`
+for i in `ls ${infolder}/*.wigFix.gz`
 do
 echo "mapping signal for ${i}";
-fname=`basename -s .wigFix $i`
-#echo $fname
+fname=`basename -s .wigFix.gz $i`
+gzip -c -d $i > ${infolder}/${fname}.wigFix
 wig2starch --max-mem $maxmem < ${infolder}/${fname}.wigFix  > ${outpath}/${fname}.starch
+rm ${infolder}/${fname}.wigFix
 done
 
 
